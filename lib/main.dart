@@ -33,6 +33,7 @@ class _HomePageState extends State<HomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Column(
+        crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
           Container(
             margin:
@@ -41,6 +42,15 @@ class _HomePageState extends State<HomePage> {
             decoration: BoxDecoration(
               color: Colors.red,
               borderRadius: BorderRadius.circular(5.0),
+            ),
+            child: Text(
+              "Flutter ROW & COLUMN",
+              textAlign: TextAlign.center,
+              style: TextStyle(
+                color: Colors.white,
+                fontWeight: FontWeight.bold,
+                fontSize: 70,
+              ),
             ),
           ),
           Expanded(
